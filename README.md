@@ -1,6 +1,6 @@
-DSP Audio De-reverberation Toolkit
+# DSP Audio De-reverberation Toolkit
 
-This project provides a suite of Python applications to demonstrate and solve the problem of audio reverberation (echo) using fundamental Digital Signal Processing (DSP) techniques. The core of the solution is based on modeling room acoustics as a Linear Time-Invariant (LTI) system and applying deconvolution via an inverse filter.
+### This project provides a suite of Python applications to demonstrate and solve the problem of audio reverberation (echo) using fundamental Digital Signal Processing (DSP) techniques. The core of the solution is based on modeling room acoustics as a Linear Time-Invariant (LTI) system and applying deconvolution via an inverse filter.
 
 The repository contains two main applications:
 
@@ -8,7 +8,7 @@ The repository contains two main applications:
 
     audio_processor.py: A real-time application that attempts to remove actual room echo from a live microphone feed after a manual calibration step.
 
-How It Works: The Theory
+## How It Works: The Theory
 
 The application is built on the principle that a reverberant signal is the result of a clean audio source being convolved with the room's unique acoustic signature, known as the Room Impulse Response (RIR).
 Echoed Signal=Clean Signal∗RIR
@@ -46,7 +46,7 @@ audio_processor.py (Live Processor)
 
     Echo Test Mode: Includes a built-in test to simulate and remove a fake echo, allowing for testing in any environment.
 
-Setup and Installation
+## Setup and Installation
 1. Clone the Repository
 
 git clone <your-repository-url>
@@ -91,7 +91,6 @@ Usage:
 
     Use the playback buttons to hear the results.
 
-[Insert Screenshot of the Demonstration App Here]
 To run the live processor:
 
 python audio_processor.py
@@ -108,8 +107,7 @@ Usage:
 
     Click "Stop Processing" when finished.
 
-[Insert Screenshot of the Live Processor App Here]
-Limitations
+## Limitations
 
     Known RIR Required: The system is not "blind" and relies on a clean measurement of the Room Impulse Response.
 
